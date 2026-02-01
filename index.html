@@ -1,4 +1,29 @@
-<style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Grupo VIP Exclusivo</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1390348672467637');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1390348672467637&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
     body {
       background: #0f0f0f;
       font-family: Arial, sans-serif;
@@ -8,22 +33,45 @@
       height: 100vh;
       margin: 0;
     }
+
     .box {
       max-width: 400px;
       background: #1c1c1c;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 25px;
+      border-radius: 14px;
       text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     }
-    a {
+
+    .titulo {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      color: #e5e5e5;
+      font-size: 16px;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .botao {
       display: block;
       margin-top: 20px;
-      background: #ff3b3b;
-      color: #fff;
+      background: linear-gradient(135deg, #ff7a00, #ff3b3b);
+      color: #ffffff;
       padding: 15px;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
       text-decoration: none;
+      box-shadow: 0 6px 20px rgba(255, 59, 59, 0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .botao:hover {
+      transform: scale(1.04);
     }
   </style>
 </head>
@@ -31,9 +79,10 @@
 <body>
   <div class="box">
     <h1 class="titulo">🔥 Grupo VIP Exclusivo</h1>
-   <p class="descricao">Conteúdos exclusivos + acesso imediato</p>
+    <p class="descricao">Conteúdos exclusivos + acesso imediato</p>
 
-    <a href="https://t.me/LunaVipExclusivo"
+    <a class="botao"
+       href="https://t.me/LunaVipExclusivo"
        target="_blank"
        onclick="fbq('track','Lead')">
       🔥 Entrar agora no Telegram
